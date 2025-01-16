@@ -1,7 +1,7 @@
-
-.container{
+.container {
     flex: 1;
 }
+
 .menu {
     display: flex;
     align-items: center;
@@ -23,16 +23,16 @@
     align-items: center;
     width: 100%;
     padding: 10px;
-  }
+}
 
 h3 {
     font-size: 24px;
     text-align: center;
     color: #7a59c8;
-  }
+}
 
 
-  .output{
+.output {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,9 +43,9 @@ h3 {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 5px #f5ccd4;
-  }
+}
 
-  .txtInputContainer {
+.txtInputContainer {
     margin: 10px 0;
     background-color: white;
     width: 60%;
@@ -101,14 +101,54 @@ input:focus {
     background: linear-gradient(45deg, #f492f0, #f9c58d);
 
 }
-p {
-    white-space: pre-wrap; /* Preserves spaces and line breaks */
-    font-family: roboto; /* Optional: Use monospace font for alignment consistency */
-    word-wrap: break-word; /* Optional: Break long words to avoid horizontal overflow */
-    font-size: 20px;
-  }
 
-h5{
+p {
+    white-space: pre-wrap;
+    /* Preserves spaces and line breaks */
+    font-family: roboto;
+    /* Optional: Use monospace font for alignment consistency */
+    word-wrap: break-word;
+    /* Optional: Break long words to avoid horizontal overflow */
+    font-size: 20px;
+}
+
+h5 {
     font-family: sans-serif;
     font-weight: 500;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Space between buttons */
+    margin-top: 20px;
+    /* Space above the button container */
+}
+
+.gradientButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    color: white;
+}
+
+.gradientButtonDiscard {
+    background: linear-gradient(90deg, #ed5871, #ed5871);
+    /* Gradient from red to orange */
+}
+
+.gradientButtonSave {
+    background: linear-gradient(90deg, #e68b29, #f059ea);
+    /* Gradient from purple to blue */
+}
+
+.gradientButton:hover {
+    opacity: 0.8;
+    /* Slight opacity change on hover */
 }
