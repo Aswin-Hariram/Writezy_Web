@@ -11,6 +11,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<GetInputScreen />} />
           <Route path="/Output" element={<DisplayOutputScreen />} />
+          <Route path="/getinputscreen" element={<GetInputScreen />} />
         </Routes>
       </div>
     </Router>
