@@ -1,0 +1,108 @@
+.menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    width: fit-content;
+    margin: 30px;
+    height: fit-content;
+    border-radius: 100px;
+    box-shadow: 0 0 5px #f5ccd4;
+}
+
+.icons {
+    font-size: large;
+}
+
+h4 {
+
+    font-size: 30px;
+    color: #7a59c8;
+    text-align: center;
+    margin: 15px 0;
+    /* Reduce vertical spacing */
+}
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    color: #333;
+    margin: 10px 0;
+    /* Reduce vertical spacing */
+}
+
+span {
+    color: #103783;
+}
+
+.txtInputContainer {
+    margin: 10px 0;
+    background-color: white;
+    width: 60%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Ensures the input and icon are spaced out */
+    align-items: center;
+    
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    /* Added padding to container for better spacing */
+}
+
+input {
+    padding: 15px;
+    /* Reduced padding for better spacing inside the input */
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    /* Removed border since the container handles the border */
+    transition: all 0.3s ease;
+}
+
+/* Hover and Focus Effects */
+.txtInputContainer:hover {
+    border-color: #999;
+    /* Slightly darker border on hover */
+}
+
+.txtInputContainer:focus-within {
+    border-color: #f5ccd4;
+    /* Highlight border on focus */
+    box-shadow: 0 0 5px #f5ccd4;
+    /* Adds a glowing effect */
+}
+
+input:focus {
+    border: none;
+    /* Keeps focus style consistent */
+}
+
+.FabWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fabContainer {
+    background: linear-gradient(45deg, #f9c58d, #f492f0);
+    /* Apply gradient */
+    color: white;
+    /* Ensure the icon color remains white */
+    border-radius: 50%;
+    /* Ensure it remains circular */
+    box-shadow: none;
+    /* Remove default shadow */
+    transition: background 0.3s ease;
+    /* Smooth transition for background */
+}
+
+.fabContainer:hover {
+    background: linear-gradient(45deg, #f492f0, #f9c58d);
+    /* Reverse gradient on hover */
+}
